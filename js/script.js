@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //pega os itens 'armazenados no navegador'
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         let total = 0;
-
+    
         if(cart.length == 0){
             //se o carrinho estiver vazio, mostra a mensagem no html
         }else{
@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 //to.fixed formata para ter duas casas decimais
                 cartItem.innerHTML = `
                 <span>${product.name}</span>
-                <span>R$ ${product.price.toFixed(2)}</span>`;
+                <span>R$ ${product.price.toFixed(2)}</span>
+                `;
                 
                 //vai adicionar uma nova div
                 cardItensContainer.appendChild(cartItem);
