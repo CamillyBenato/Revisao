@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carinho</title>
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/carrinhos.css">
 </head>
 <body>
     <header class="main-header">
@@ -17,5 +18,26 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="card-section">
+            <h2>Meu Pedido</h2>
+            <div id="card-itens-container">
+                <p>Seu Carrinho está Vazio</p>
+            </div>
+            <div class="card-total">
+                <h3>Total: <span id="card-total-value">R$0,00</span></h3>
+            </div>
+            <button id="limpar-pedido" class="btn">Limpar Pedido</button>
+            <button id="checkout-btn" class="btn">Finalizar Pedido via WhatsApp</button>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Desenvolvido por belos programadores de DEV do Senai 2-A</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+
 </body>
 </html>

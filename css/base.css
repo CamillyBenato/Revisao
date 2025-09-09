@@ -4,17 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body{
-    background-image: url("/imagem/fundo3.png");
-    color: rgb(29, 27, 30);
+    background-color: rgb(224, 202, 169);
     line-height: 3.0;
 }
 
 .main-header{
-    background-color: rgb(211, 191, 148);
+    background-color: rgb(211, 194, 148);
     color: rgb(184, 191, 206);
     padding: 1rem;
     text-align: center;
@@ -48,6 +47,7 @@ nav ul li a{
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
+    font-size: 17px;
 }
 
 nav ul li a:hover{
@@ -60,3 +60,10 @@ nav ul li a:active{
     border-bottom: 2px solid rgb(255, 230, 0);
 }
 
+.main-footer{
+    background-color: rgb(230, 184, 98);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20dvh;
+}
