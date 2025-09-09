@@ -78,6 +78,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //atualizar o texto do valor total da página
         cardTotalValue.textContent = `R$ ${total.toFixed(2)}`;
+
+        checkoutBtn.addEventListener('click', () => {
+            const numeroWhatsApp = '5515991008921';
+
+            //montar a mensagem do pedido
+            let mensagem = 'Olá! Segue meu Pedido:\n\n';
+            cart.forEach(product => {
+                mensagem += `- ${product.name}: (R$ ${product.price.toFixed(2)})\n`;
+            });
+            mensagem += `\n*Total: R$ ${total.toFixed(2)}*`;
+
+            const urlWhatsApp = `https://wa.me/${5515991008921}?text=${encodeURIComponent(mensagem)}`;
+            window.open(urlWhatsApp, '_blank');
+            localStorage.removeItem('cart'); //limpa o carrinho
+        });
     }
 
         const limparTabela = document.getElementById('limpar-pedido');
