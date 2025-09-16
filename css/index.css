@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Viga&display=swap');
+
+.slogan{
+    text-align: center;
+}
+
+.slogan h2{
+    font-size: 3rem;
+    
+}
+
+.sobre{
+    text-align: center;
+}
+
+.foto-cantina{
+    max-width: 700px;
+}
+
+main{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 2rem;
+    background-color: rgb(230, 184, 98);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(230, 213, 119);
+    }
+
+section h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5rem;
+    font-family: "Viga", sans-serif;
+}
+
+section p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    display: inline-block;
+    background-color: rgb(83, 59, 8);
+    color: rgb(247, 194, 20);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, ease transform 0.2s ease;
+}
+
+.btn:hover{
+    background-color: rgb(87, 47, 2);
+    transform: translateY(-5px);
+}
